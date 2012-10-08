@@ -12,6 +12,7 @@ group :development, :test do
   gem 'spork','0.9.2'
 end
 
+gem 'factory_girl_rails','4.1.0', group: :test
 gem 'annotate','2.5.0', group: :development
 
 # Gems used only for assets and not required
