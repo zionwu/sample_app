@@ -12,9 +12,11 @@ Application	config/application.rb	/^  class Application < Rails::Application$/;"
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
 CreateMicroposts	db/migrate/20121013082911_create_microposts.rb	/^class CreateMicroposts < ActiveRecord::Migration$/;"	c
+CreateRelationships	db/migrate/20121014062037_create_relationships.rb	/^class CreateRelationships < ActiveRecord::Migration$/;"	c
 CreateUsers	db/migrate/20121007084314_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
 Micropost	app/models/micropost.rb	/^class Micropost < ActiveRecord::Base$/;"	c
 MicropostsController	app/controllers/microposts_controller.rb	/^class MicropostsController < ApplicationController$/;"	c
+Relationship	app/models/relationship.rb	/^class Relationship < ActiveRecord::Base$/;"	c
 SampleApp	config/application.rb	/^module SampleApp$/;"	m
 SessionsController	app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
 SessionsHelper	app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
@@ -31,7 +33,9 @@ change	db/migrate/20121007111520_add_password_digest_to_users.rb	/^  def change$
 change	db/migrate/20121008165254_add_remember_token_to_users.rb	/^  def change$/;"	f	class:AddRememberTokenToUsers
 change	db/migrate/20121012180956_add_admin_to_users.rb	/^  def change$/;"	f	class:AddAdminToUsers
 change	db/migrate/20121013082911_create_microposts.rb	/^  def change$/;"	f	class:CreateMicroposts
+change	db/migrate/20121014062037_create_relationships.rb	/^  def change$/;"	f	class:CreateRelationships
 contact	app/controllers/static_pages_controller.rb	/^  def contact$/;"	f	class:StaticPagesController
+correct_user	app/controllers/microposts_controller.rb	/^    def correct_user$/;"	f	class:MicropostsController
 correct_user	app/controllers/users_controller.rb	/^    def correct_user$/;"	f	class:UsersController
 create	app/controllers/microposts_controller.rb	/^  def create$/;"	f	class:MicropostsController
 create	app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
@@ -44,6 +48,9 @@ destroy	app/controllers/microposts_controller.rb	/^  def destroy$/;"	f	class:Mic
 destroy	app/controllers/sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
 destroy	app/controllers/users_controller.rb	/^  def destroy$/;"	f	class:UsersController
 edit	app/controllers/users_controller.rb	/^  def edit$/;"	f	class:UsersController
+feed	app/models/user.rb	/^  def feed$/;"	f	class:User
+follow!	app/models/user.rb	/^  def follow!(other_user)$/;"	f	class:User
+following?	app/models/user.rb	/^  def following?(other_user)$/;"	f	class:User
 full_title	app/helpers/application_helper.rb	/^  def full_title(page_title)$/;"	f	class:ApplicationHelper
 gravatar_for	app/helpers/users_helper.rb	/^  def gravatar_for(user, options = { size: 50 })$/;"	f	class:UsersHelper
 help	app/controllers/static_pages_controller.rb	/^  def help$/;"	f	class:StaticPagesController
@@ -59,4 +66,5 @@ sign_out	app/helpers/sessions_helper.rb	/^  def sign_out$/;"	f	class:SessionsHel
 signed_in?	app/helpers/sessions_helper.rb	/^  def signed_in?$/;"	f	class:SessionsHelper
 signed_in_user	app/helpers/sessions_helper.rb	/^  def signed_in_user$/;"	f	class:SessionsHelper
 store_location	app/helpers/sessions_helper.rb	/^  def store_location$/;"	f	class:SessionsHelper
+unfollow!	app/models/user.rb	/^  def unfollow!(other_user)$/;"	f	class:User
 update	app/controllers/users_controller.rb	/^  def update$/;"	f	class:UsersController
